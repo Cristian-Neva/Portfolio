@@ -93,15 +93,16 @@ HOME
 .home{
     min-height:100vh;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    gap:60px;
+    text-align:center;
+    padding:140px 10%;
     background:
     radial-gradient(circle at top,#163d70 0%,#08111f 60%);
 }
 
 .home-text{
-    flex:1;
+    max-width:850px;
 }
 
 .home-text h3{
@@ -151,28 +152,6 @@ HOME
 .buttons a:hover{
     transform:translateY(-6px);
     box-shadow:0 0 25px rgba(0,191,255,.5);
-}
-
-.home-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.home-image img{
-    width:380px;
-    height:380px;
-    object-fit:cover;
-    border-radius:50%;
-    border:6px solid #00bfff;
-    box-shadow:
-    0 0 20px #00bfff,
-    0 0 50px rgba(0,191,255,.4);
-    transition:.5s;
-}
-
-.home-image img:hover{
-    transform:scale(1.04);
 }
 
 /*==========================
@@ -458,9 +437,6 @@ section.show{
 
 }
 
-.home-image img{
-    animation:float 5s ease-in-out infinite;
-}
 
 /*==========================
 RESPONSIVE TABLET
@@ -474,7 +450,7 @@ nav{
 
 .home{
 
-    flex-direction:column-reverse;
+    flex-direction:column;
     text-align:center;
     padding-top:140px;
 
@@ -488,12 +464,6 @@ nav{
     font-size:28px;
 }
 
-.home-image img{
-
-    width:300px;
-    height:300px;
-
-}
 
 .buttons{
 
@@ -570,13 +540,6 @@ nav ul{
 .home-text p{
 
     font-size:16px;
-
-}
-
-.home-image img{
-
-    width:230px;
-    height:230px;
 
 }
 
